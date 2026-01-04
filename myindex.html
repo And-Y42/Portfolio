@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio website for job searching — projects, experience, and skills."
+    />
+    <title>Andrew Lee — Portfolio</title>
+
+    <!-- Social preview basics (optional) -->
+    <meta property="og:title" content="Andrew Lee — Portfolio" />
+    <meta property="og:description" content="Projects, experience, and skills." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Decorative background -->
+    <div class="bg" aria-hidden="true">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="grid"></div>
+    </div>
+
+    <!-- Top navigation -->
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot"></span>
+        <span>Andrew Lee</span>
+      </a>
+
+      <button class="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#service">Service</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero section">
+        <div class="hero-content">
+          <p class="eyebrow reveal">Software Engineer • Full Stack • Data • AI</p>
+          <h1 class="headline reveal">
+            Building clean, fast products with great UX.
+          </h1>
+          <p class="subhead reveal">
+            I’m Andrew Lee — I love turning messy problems into elegant systems.
+            I’m currently seeking <strong>New Grad / Internship</strong> roles.
+          </p>
+
+          <div class="ctaRow reveal">
+            <a class="btn primary" href="#projects">
+              View Projects
+              <span class="btnGlow" aria-hidden="true"></span>
+            </a>
+            <a class="btn" href="#experience">Work Experience</a>
+          </div>
+
+          <div class="links reveal" aria-label="Contact links">
+            <a class="chip" href="mailto:andy40616@gmail.com" title="Email">
+              <!-- icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4 6h16v12H4V6zm8 7L5.5 7.5h13L12 13z"
+                  fill="currentColor"
+                />
+              </svg>
+              Email
+            </a>
+
+            <a
+              class="chip"
+              href="https://www.linkedin.com/in/andrew-lee-411374282"
+              target="_blank"
+              rel="noreferrer"
+              title="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.5 8.5H4V20h2.5V8.5zM5.25 4C4.56 4 4 4.56 4 5.25S4.56 6.5 5.25 6.5 6.5 5.94 6.5 5.25 5.94 4 5.25 4zM20 20h-2.5v-6c0-1.43-.03-3.27-2-3.27-2 0-2.31 1.55-2.31 3.16V20H10.7V8.5H13v1.57h.03c.32-.6 1.1-1.23 2.27-1.23 2.43 0 2.88 1.6 2.88 3.68V20z"
+                  fill="currentColor"
+                />
+              </svg>
+              LinkedIn
+            </a>
+
+            <a
+              class="chip"
+              href="https://github.com/And-Y42"
+              target="_blank"
+              rel="noreferrer"
+              title="GitHub"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.48 0-.24-.01-.86-.01-1.7-2.78.62-3.37-1.38-3.37-1.38-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.07 1.53 1.07.9 1.58 2.36 1.12 2.93.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.2 9.2 0 0 1 12 7.3c.85 0 1.71.12 2.51.35 1.9-1.33 2.74-1.05 2.74-1.05.56 1.4.21 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.95.68 1.92 0 1.38-.01 2.5-.01 2.84 0 .26.18.59.69.48A10.1 10.1 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"
+                  fill="currentColor"
+                />
+              </svg>
+              GitHub
+            </a>
+
+            <a class="chip" href="./Andrew Lee Resume.pdf" target="_blank" title="Resume PDF">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6 2h9l3 3v17H6V2zm9 1.5V6h2.5L15 3.5zM8 10h8v2H8v-2zm0 4h8v2H8v-2zm0 4h6v2H8v-2z"
+                  fill="currentColor"
+                />
+              </svg>
+              Resume (PDF)
+            </a>
+          </div>
+
+          <div class="quickStats reveal" role="list" aria-label="Highlights">
+            <div class="stat" role="listitem">
+              <span class="statNum" data-count="12">0</span>
+              <span class="statLabel">Projects shipped</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="statNum" data-count="4">0</span>
+              <span class="statLabel">Internships / roles</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="statNum" data-count="3">0</span>
+              <span class="statLabel">Leadership positions</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Profile card">
+          <!-- <div class="avatar" aria-hidden="true">
+            <div class="avatarInner">
+                <img src="Linkedin.jpg" alt="profile picture">
+            </div>
+          </div> -->
+          <div class="cardBody">
+            <h2>Andrew Lee</h2>
+            <p class="muted">
+              Full-stack engineer focused on performance, design systems, and
+              developer experience.
+            </p>
+
+            <div class="pillRow">
+              <span class="pill">Open to: SWE, AI, Data Engineer</span>
+              <span class="pill">US</span>
+            </div>
+
+            <div class="mini">
+              <div class="miniItem">
+                <span class="k">Top skills</span>
+                <span class="v">React • Node • Python</span>
+              </div>
+              <div class="miniItem">
+                <span class="k">Interests</span>
+                <span class="v">AI • UI Engineering • Systems</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <div class="sectionHead reveal">
+          <h2>Education</h2>
+          <p class="muted">What I studied and what I focused on.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="cardTop">
+            <div>
+              <h3>Emory University</h3>
+              <p class="muted">B.S. Computer Science • Concentration in AI
+            </div>
+            <div class="tag">2022 — 2026</div>
+          </div>
+          <div class="cardGrid">
+            <div>
+              <h4>Highlights</h4>
+              <ul>
+                <!-- <li>GPA: 3.8 / 4.0 (example)</li> -->
+                <li>Relevant coursework: Data Structures, OS, AI, ML, Deep Learning</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Awards</h4>
+              <ul>
+                <li>(example)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="sectionHead reveal">
+          <h2>Technical Skills</h2>
+          <p class="muted">Languages, frameworks, tools — the stuff I build with.</p>
+        </div>
+
+        <div class="skillsGrid">
+          <div class="card reveal">
+            <h3>Languages</h3>
+            <div class="badgeWrap">
+              <span class="badge">JavaScript / TypeScript</span>
+              <span class="badge">Python</span>
+              <span class="badge">Java</span>
+              <span class="badge">C/C++</span>
+              <span class="badge">SQL</span>
+              <span class="badge">HTML/CSS</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Frameworks & Tools</h3>
+            <div class="badgeWrap">
+              <span class="badge">React</span>
+              <span class="badge">Next.js</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">Express</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">Supabase</span>
+              <span class="badge">Git/GitHub</span>
+              <span class="badge">Fly</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>What I’m great at</h3>
+            <ul class="checklist">
+              <li>Building responsive, accessible UI</li>
+              <li>API design, data modeling, and performance tuning</li>
+              <li>Shipping quickly without sacrificing code quality</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="sectionHead reveal">
+          <h2>Work Experience</h2>
+          <p class="muted">Impact-focused bullets that recruiters like.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="tItem reveal">
+            <div class="tDot" aria-hidden="true"></div>
+            <div class="card">
+              <div class="cardTop">
+                <div>
+                  <h3>Software Engineering Intern — Acme Corp</h3>
+                  <p class="muted">Frontend / Platform • Remote</p>
+                </div>
+                <div class="tag">May 2025 — Aug 2025</div>
+              </div>
+              <ul>
+                <li>
+                  Built a component library that reduced UI implementation time by
+                  <strong>30%</strong> across 4 teams.
+                </li>
+                <li>
+                  Improved page load performance by <strong>25%</strong> using code
+                  splitting, caching, and image optimization.
+                </li>
+                <li>
+                  Added analytics dashboards that helped leadership identify churn
+                  drivers and prioritize fixes.
+                </li>
+              </ul>
+              <div class="badgeWrap">
+                <span class="badge">React</span><span class="badge">TypeScript</span>
+                <span class="badge">Storybook</span><span class="badge">Node</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tItem reveal">
+            <div class="tDot" aria-hidden="true"></div>
+            <div class="card">
+              <div class="cardTop">
+                <div>
+                  <h3>Research Assistant — University Lab</h3>
+                  <p class="muted">Data / ML • On-campus</p>
+                </div>
+                <div class="tag">Sep 2024 — May 2025</div>
+              </div>
+              <ul>
+                <li>
+                  Implemented a data pipeline to clean and label 100k+ rows,
+                  reducing preprocessing time from hours to minutes.
+                </li>
+                <li>
+                  Trained baseline models and documented experiments for
+                  reproducibility.
+                </li>
+              </ul>
+              <div class="badgeWrap">
+                <span class="badge">Python</span><span class="badge">Pandas</span>
+                <span class="badge">scikit-learn</span><span class="badge">SQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- LEADERSHIP + CLUB -->
+      <section id="leadership" class="section">
+        <div class="sectionHead reveal">
+          <h2>Club Leadership</h2>
+          <p class="muted">Collaboration, mentorship, and ownership.</p>
+        </div>
+
+        <div class="cardsTwo">
+          <div class="card reveal">
+            <div class="cardTop">
+              <div>
+                <h3>President — Computing Club</h3>
+                <p class="muted">Led workshops + industry events</p>
+              </div>
+              <div class="tag">2024 — 2026</div>
+            </div>
+            <ul>
+              <li>Grew membership from 80 → 200 through events and outreach.</li>
+              <li>Coordinated a 24-hour hackathon with 300+ attendees.</li>
+              <li>Built mentorship program pairing 40 mentees with upperclassmen.</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <div class="cardTop">
+              <div>
+                <h3>Team Lead — Robotics</h3>
+                <p class="muted">Embedded + controls</p>
+              </div>
+              <div class="tag">2023 — 2024</div>
+            </div>
+            <ul>
+              <li>Led a 6-person subteam delivering reliable motor control code.</li>
+              <li>Improved test coverage and reduced regressions before comps.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="sectionHead reveal">
+          <h2>Projects & Extracurricular Activities</h2>
+          <p class="muted">
+            Replace these with your best 2–4 projects (quality beats quantity).
+          </p>
+        </div>
+
+        <div class="projectsGrid">
+          <article class="proj card reveal">
+            <div class="projHead">
+              <h3>PulseBoard — Personal Finance Dashboard</h3>
+              <span class="tag">Featured</span>
+            </div>
+            <p class="muted">
+              Mobile-first dashboard that connects bank exports, categorizes
+              spending, and visualizes trends.
+            </p>
+            <ul class="miniBullets">
+              <li>CSV ingest + rules engine for categorization</li>
+              <li>Charts with smooth transitions + filtering</li>
+              <li>Auth + encrypted local storage</li>
+            </ul>
+            <div class="projLinks">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="badgeWrap">
+              <span class="badge">React</span>
+              <span class="badge">Vite</span>
+              <span class="badge">Node</span>
+              <span class="badge">PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="proj card reveal">
+            <div class="projHead">
+              <h3>StudySprint — Focus Timer + Task Planner</h3>
+              <span class="tag">App</span>
+            </div>
+            <p class="muted">
+              Pomodoro + tasks with streaks, keyboard shortcuts, and offline support.
+            </p>
+            <ul class="miniBullets">
+              <li>Service worker for offline mode</li>
+              <li>Accessible components + reduced motion support</li>
+              <li>Local-first storage + sync-ready architecture</li>
+            </ul>
+            <div class="projLinks">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Case Study</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="badgeWrap">
+              <span class="badge">TypeScript</span>
+              <span class="badge">PWA</span>
+              <span class="badge">IndexedDB</span>
+            </div>
+          </article>
+
+          <article class="proj card reveal">
+            <div class="projHead">
+              <h3>VolunteerMatch Lite — Event Finder</h3>
+              <span class="tag">Hackathon</span>
+            </div>
+            <p class="muted">
+              Lightweight platform helping students find nearby service events.
+            </p>
+            <ul class="miniBullets">
+              <li>Search + filters + map list UI</li>
+              <li>REST API with rate limiting</li>
+              <li>Deployed via containerized workflow</li>
+            </ul>
+            <div class="projLinks">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="badgeWrap">
+              <span class="badge">Next.js</span>
+              <span class="badge">Express</span>
+              <span class="badge">Docker</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- COMMUNITY SERVICE -->
+      <section id="service" class="section">
+        <div class="sectionHead reveal">
+          <h2>Community Service</h2>
+          <p class="muted">Giving back, teaching, and building community.</p>
+        </div>
+
+        <div class="cardsTwo">
+          <div class="card reveal">
+            <div class="cardTop">
+              <div>
+                <h3>STEM Tutor — Local Nonprofit</h3>
+                <p class="muted">Math + intro programming</p>
+              </div>
+              <div class="tag">2023 — Present</div>
+            </div>
+            <ul>
+              <li>Tutored 20+ students weekly; improved confidence and grades.</li>
+              <li>Created beginner-friendly Python exercises and worksheets.</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <div class="cardTop">
+              <div>
+                <h3>Food Bank Volunteer</h3>
+                <p class="muted">Community distribution</p>
+              </div>
+              <div class="tag">2022 — 2024</div>
+            </div>
+            <ul>
+              <li>Helped pack and distribute food to 200+ families/month.</li>
+              <li>Improved sign-in flow to reduce wait times during peak hours.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer section">
+        <div class="footerInner reveal">
+          <div>
+            <h3>Let’s connect</h3>
+            <p class="muted">
+              If you’re hiring or want to collaborate, email me — I reply fast.
+            </p>
+          </div>
+
+          <div class="footerLinks">
+            <a class="link" href="mailto:andy40616@gmail.com">andy40616@gmail.com</a>
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/andrew-lee-411374282"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="link"
+              href="https://github.com/And-Y42"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+            <a class="link" href="./Andrew Lee Resume.pdf" target="_blank">Resume (PDF)</a>
+          </div>
+        </div>
+
+        <p class="tiny muted">
+          © <span id="year"></span> Andrew Lee • Built with HTML/CSS/JS
+        </p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
